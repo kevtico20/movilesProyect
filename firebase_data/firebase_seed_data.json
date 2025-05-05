@@ -1,0 +1,129 @@
+{
+  "users": {
+    "user_123": {
+      "name": "Kevin Chavarria",
+      "email": "kevin@email.com"
+    }
+  },
+  "users/user_123/vehicles": {
+    "vehicle_001": {
+      "brand": "Hyundai",
+      "model": "Kona Electric",
+      "year": 2022,
+      "autonomy_km": 400,
+      "connector_type": "CCS"
+    },
+    "vehicle_002": {
+      "brand": "Nissan",
+      "model": "Leaf",
+      "year": 2020,
+      "autonomy_km": 270,
+      "connector_type": "Type2"
+    }
+  },
+  "stations": {
+    "station_001": {
+      "name": "Carga PZ Centro",
+      "location": {
+        "_latitude": 9.345,
+        "_longitude": -83.675
+      },
+      "available": true,
+      "connectors": [
+        "Type2",
+        "CCS"
+      ],
+      "power_kw": 22,
+      "price_per_kwh": 150,
+      "brand": "EVGo",
+      "schedule": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 10
+      },
+      "lastUpdated": "2025-05-05T01:40:21.862111Z"
+    }
+  },
+  "routes": {
+    "route_001": {
+      "userId": "user_123",
+      "origin": {
+        "_latitude": 9.315,
+        "_longitude": -83.703
+      },
+      "destination": {
+        "_latitude": 9.859,
+        "_longitude": -83.921
+      },
+      "vehicleRangeKm": 300,
+      "preferredChargerTypes": [
+        "CCS"
+      ],
+      "preferredBrands": [
+        "EVGo"
+      ],
+      "stops": [
+        "station_001"
+      ],
+      "createdAt": "2025-05-05T01:40:21.862120Z"
+    }
+  },
+  "community_posts": {
+    "post_001": {
+      "userId": "user_123",
+      "content": "\u00bfAlguien ha probado la estaci\u00f3n de San Isidro?",
+      "timestamp": "2025-05-05T01:40:21.862122Z",
+      "stationId": "station_001",
+      "groupId": "group_001"
+    }
+  },
+  "community_posts/post_001/comments": {
+    "comment_001": {
+      "userId": "user_456",
+      "text": "S\u00ed, funciona excelente.",
+      "timestamp": "2025-05-05T01:40:21.862124Z"
+    }
+  },
+  "groups": {
+    "group_001": {
+      "name": "Conductores PZ",
+      "description": "Grupo para compartir info de estaciones en P\u00e9rez Zeled\u00f3n",
+      "region": "P\u00e9rez Zeled\u00f3n",
+      "members": [
+        "user_123",
+        "user_456"
+      ]
+    }
+  },
+  "station_reviews": {
+    "review_001": {
+      "stationId": "station_001",
+      "userId": "user_123",
+      "rating": 5,
+      "comment": "Muy buena estaci\u00f3n, r\u00e1pida y segura.",
+      "timestamp": "2025-05-05T01:40:21.862127Z"
+    }
+  },
+  "alerts": {
+    "alert_001": {
+      "userId": "user_123",
+      "type": "new_station",
+      "title": "Nueva estaci\u00f3n disponible",
+      "message": "Se agreg\u00f3 una nueva estaci\u00f3n en Dominical",
+      "read": false,
+      "timestamp": "2025-05-05T01:40:21.862129Z"
+    }
+  },
+  "users/user_123/calculations": {
+    "calc_001": {
+      "distanceKm": 120,
+      "electricityCost": 1600,
+      "gasCost": 4800,
+      "co2SavedKg": 12.4,
+      "date": "2025-05-05T01:40:21.862131Z"
+    }
+  }
+}
