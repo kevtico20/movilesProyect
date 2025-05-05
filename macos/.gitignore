@@ -5,3 +5,22 @@
 # Xcode-related
 **/dgph
 **/xcuserdata/
+# Entorno virtual
+venv/
+.env/
+
+# Archivos de configuración del editor
+.idea/
+.vscode/
+
+# Archivos compilados
+__pycache__/
+*.py[cod]
+
+# Archivos temporales
+*.log
+*.sqlite3
+.DS_Store
+
+# Otros
+firebase_data/venv/
